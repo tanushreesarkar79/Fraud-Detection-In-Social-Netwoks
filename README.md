@@ -31,7 +31,9 @@ Visualization: Visualize the clustering process and the classification of users 
 
 
 Python Pandas: For data manipulation. 
+
 Scikit-learn: For K-Means clustering and data preprocessing. 
+
 Seaborn/Matplotlib: For data visualization.
 
 # How to Run the Project
