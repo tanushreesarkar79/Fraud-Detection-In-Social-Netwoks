@@ -85,34 +85,12 @@ Compare the individual models and hybrid approach using different performance me
 
 # Project Workflow
 
-
-                 Social Network Data
-                         |
-                         v
-                Data Preprocessing
-                         |
-                         v
-                  Feature Extraction
-                         |
-          +--------------+--------------+
-          |              |              |
-          v              v              v
-     Machine          Deep           Graph
-     Learning        Learning       Learning
-          |              |              |
-          v              v              v
-   RF / XGBoost      CNN / LSTM        GCN
-          |              |              |
-          +--------------+--------------+
-                         |
-                         v
-                 Hybrid Ensemble
-                         |
-                         v
-                  Fraud Prediction
-                         |
-              +----------+----------+
-              |                     |
-              v                     v
-         Legitimate              Fraudulent
-            User                    User
+| Stage | Machine Learning | Deep Learning | Graph Learning |
+|------|------------------|---------------|----------------|
+| **Input** | User & Activity Features | User & Text Features | User Network Relationships |
+| **Processing** | Data Preprocessing & Feature Extraction | Text Preprocessing & Feature Extraction | Graph Construction |
+| **Models** | Random Forest, XGBoost, SVM | CNN, LSTM | GCN |
+| **Prediction** | Fraud Probability | Fraud Probability | Fraud Probability |
+| **Combination** | &nbsp; | **Hybrid Ensemble** | &nbsp; |
+| **Final Output** | **Fraud Prediction** | **Fraud Prediction** | **Fraud Prediction** |
+| **Classification** | Legitimate / Fraudulent | Legitimate / Fraudulent | Legitimate / Fraudulent |
